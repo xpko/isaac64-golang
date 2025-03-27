@@ -257,3 +257,7 @@ func (rng *ISAAC64State) Isaac64Rand() uint64 {
 	rng.randcnt--
 	return val
 }
+
+func New() *ISAAC64State {
+	return new(ISAAC64State)
+}
